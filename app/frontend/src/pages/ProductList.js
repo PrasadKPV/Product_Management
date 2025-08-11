@@ -86,7 +86,7 @@ export default function ProductList() {
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
-        const res = await axios.get('/api/products');
+        const res = await axios.get('https://product-management-nptk.onrender.com');
         const fetchedProducts = res.data;
         setAllProducts(shuffleArray(fetchedProducts));
 
