@@ -18,8 +18,7 @@ export default function EditProduct() {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        // Use a relative URL. This works with the production build setup.
-        const res = await axios.get(`/api/products/${id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/products/${id}`);
         setForm(res.data);
       } catch (err) {
         console.error("Failed to fetch product", err);
@@ -39,7 +38,7 @@ export default function EditProduct() {
     e.preventDefault();
     setError(''); // Clear previous errors
     try {
-      await axios.put(`/api/products/${id}`, form);
+      await axios.put(`${process.env.REACT_APP_API_URL}/products/${id}`, form);
       navigate('/');
     } catch (err) {
       console.error("Failed to update product", err);

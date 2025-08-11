@@ -86,7 +86,7 @@ export default function ProductList() {
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
-        const res = await axios.get('https://product-management-nptk.onrender.com');
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/products`);
         const fetchedProducts = res.data;
         setAllProducts(shuffleArray(fetchedProducts));
 
@@ -142,7 +142,7 @@ export default function ProductList() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/api/products/${id}`);
+      await axios.delete(`${process.env.REACT_APP_API_URL}/products/${id}`);
       setAllProducts(prev => prev.filter(p => p._id !== id));
     } catch (error) {
       console.error("Failed to delete product:", error);
