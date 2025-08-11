@@ -2,6 +2,10 @@
 
 A modern, full-featured, and responsive web application for managing a product inventory. Built with the MERN stack, this project showcases a clean user interface, smooth animations, and a robust set of features for a seamless user experience.
 
+[Live Demo](https://your-live-demo-link.com) &nbsp;&nbsp;·&nbsp;&nbsp; [Report Bug](https://github.com/your-repo/issues) &nbsp;&nbsp;·&nbsp;&nbsp; [Request Feature](https://github.com/your-repo/issues)
+
+---
+
 ## ✨ Key Features
 
 -   **CRUD Operations**: Full capabilities to Create, Read, Update, and Delete products.
@@ -22,17 +26,38 @@ A modern, full-featured, and responsive web application for managing a product i
 
 ## 🚀 Tech Stack
 
--   **Frontend**: React, React Router
--   **Backend**: Node.js, Express.js
--   **Database**: MongoDB
--   **Styling**: Pure CSS with modern techniques (Flexbox, Grid, Custom Properties, Animations)
+This project is a monorepo managed with npm workspaces.
+
+| Category      | Technology                                                                                             |
+| :------------ | :----------------------------------------------------------------------------------------------------- |
+| **Frontend**  | [React](https://reactjs.org/), [React Router](https://reactrouter.com/), [Axios](https://axios-http.com/) |
+| **Backend**   | [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), [Mongoose](https://mongoosejs.com/) |
+| **Database**  | [MongoDB](https://www.mongodb.com/)                                                                    |
+| **Styling**   | Pure CSS with Flexbox, Grid, Custom Properties, and Animations                                         |
+| **Dev Tools** | [Concurrently](https://www.npmjs.com/package/concurrently), [Nodemon](https://nodemon.io/)              |
 
 ## 📸 Screenshots
 
-*(Placeholder for Grid View Screenshot)*
-*(Placeholder for List View Screenshot)*
-*(Placeholder for Add Product Form Screenshot)*
-*(Placeholder for Mobile View Screenshot)*
+| Grid View                               | List View                               |
+| :-------------------------------------- | :-------------------------------------- |
+| *(Placeholder for Grid View Screenshot)* | *(Placeholder for List View Screenshot)* |
+
+| Add/Edit Product Form                     | Mobile Responsive View                    |
+| :---------------------------------------- | :---------------------------------------- |
+| *(Placeholder for Add/Edit Form Screenshot)* | *(Placeholder for Mobile View Screenshot)* |
+
+## 📁 Project Structure
+
+The project is organized as a monorepo with two main workspaces:
+
+```
+/
+├── app/
+│   ├── backend/      # Express.js backend application
+│   └── frontend/     # React frontend application
+├── package.json      # Root package.json with monorepo scripts
+└── README.md
+```
 
 ## 🛠️ Getting Started
 
@@ -40,14 +65,41 @@ To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
--   Node.js and npm installed.
--   A running instance of MongoDB.
--   A configured backend server running on `http://localhost:5000`.
+-   Node.js (v16 or later) and npm
+-   MongoDB (local instance or a connection string from a service like MongoDB Atlas)
 
 ### Installation & Setup
 
-1.  **Navigate to the frontend directory**: `cd productManagement/frontend`
-2.  **Install NPM packages**: `npm install`
-3.  **Start the development server**: `npm start`
+1.  **Clone the repository**
+    ```sh
+    git clone https://github.com/your-username/product-management.git
+    cd product-management
+    ```
 
-The application will be available at `http://localhost:3000`.
+2.  **Install dependencies from the root directory**
+    This command will install dependencies for the root, backend, and frontend workspaces.
+    ```sh
+    npm install
+    ```
+
+3.  **Set up environment variables**
+    Create a `.env` file in the `app/backend/` directory and add your MongoDB connection string and a port for the server.
+    ```env
+    # app/backend/.env
+    MONGO_URI=your_mongodb_connection_string
+    PORT=5000
+    ```
+
+### Running the Application
+
+From the root directory, run the development script:
+
+```sh
+npm run dev
+```
+
+This will start both the backend and frontend servers concurrently.
+-   The React frontend will be available at `http://localhost:3000`.
+-   The Express backend will be running on `http://localhost:5000` (or the port you specified in `.env`).
+
+The frontend is configured to proxy API requests to the backend, so you're all set to start developing!
