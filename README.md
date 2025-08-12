@@ -37,12 +37,13 @@ A modern, full-featured, and responsive web application for managing a product i
 ## Screenshots
 
 | Grid View                               | List View                               |
-| :-------------------------------------- | :-------------------------------------- |
-| *(Placeholder for Grid View Screenshot)* | *(Placeholder for List View Screenshot)* |
+| :-------------------------------------: | :-------------------------------------: |
+| ![Grid View](./screenshots/grid-view.png) | ![List View](./screenshots/list-view.png) |
 
 | Add/Edit Product Form                     | Mobile Responsive View                    |
-| :---------------------------------------- | :---------------------------------------- |
-| *(Placeholder for Add/Edit Form Screenshot)* | *(Placeholder for Mobile View Screenshot)* |
+| :---------------------------------------: | :---------------------------------------: |
+| ![Add/Edit Form](./screenshots/form-view.png) | ![Mobile View](./screenshots/mobile-view.png) |
+
 
 ## Project Structure
 
