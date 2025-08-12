@@ -1,100 +1,141 @@
 # Product Management Dashboard
 
-A modern, full-featured, and responsive web application for managing a product inventory. Built with the MERN stack, this project showcases a clean user interface, smooth animations, and a robust set of features for a seamless user experience.
+A modern, full-featured, and responsive web application for managing product inventory. Built with Next.js and MongoDB, this project showcases a clean UI, smooth animations, and a robust set of features for a seamless user experience.
 
-[Live Demo](https://your-live-demo-link.com) &nbsp;&nbsp;·&nbsp;&nbsp;
+[Live Demo](https://your-live-demo-link.com) · Replace with your deployed URL
 
 ---
 
 ## Key Features
 
--   **CRUD Operations**: Full capabilities to Create, Read, Update, and Delete products.
--   **Dynamic Product Display**:
-    -   Switch between a beautiful **Grid View** and a detailed **List View**.
-    -   Smooth, animated transitions when toggling views and loading items.
--   **Powerful Filtering and Sorting**:
-    -   Live search to instantly filter products by name.
-    -   Sort products by price (Low to High / High to Low) with a custom-styled dropdown.
--   **Modern UI/UX**:
-    -   Clean, responsive design that works on desktop, tablets, and mobile devices.
-    -   Interactive, animated navigation and controls.
-    -   A professional and engaging split-screen layout for adding and editing products.
--   **User-Friendly Forms**:
-    -   Intuitive forms for adding and editing products.
-    -   Client-side validation to prevent errors.
--   **Safe Deletion**: A confirmation modal prevents accidental product deletion.
+- **CRUD Operations**: Create, Read, Update, and Delete products.
+- **Grid / List Views**: Toggle between grid and list layouts with smooth transitions.
+- **Filtering & Sorting**: Live search and sorting (e.g., by price).
+- **Responsive UI**: Works across desktop, tablet, and mobile.
+- **Client-side Validation**: Friendly forms for add/edit with validation.
+- **Safe Deletion**: Confirmation modal before deleting items.
 
 ## Tech Stack
 
-| Category      | Technology                                                                                             |
-| :------------ | :----------------------------------------------------------------------------------------------------- |
-| **Framework** | [Next.js](https://nextjs.org/) (React Framework)                                                       |
-| **Backend**   | Next.js API Routes, [Mongoose](https://mongoosejs.com/)                                                |
-| **Database**  | [MongoDB](https://www.mongodb.com/)                                                                    |
-| **Styling**   | Pure CSS with Flexbox, Grid, Custom Properties, and Animations                                         |
-| **Deployment**| [Vercel](https://vercel.com/)                                                                          |
-
-## Screenshots
-
-| Grid View                               | List View                               |
-| :-------------------------------------: | :-------------------------------------: |
-| ![Grid View](./screenshots/grid-view.png) | ![List View](./screenshots/list-view.png) |
-
-| Add/Edit Product Form                     | Mobile Responsive View                    |
-| :---------------------------------------: | :---------------------------------------: |
-| ![Add/Edit Form](./screenshots/form-view.png) | ![Mobile View](./screenshots/mobile-view.png) |
-
+| Category     | Technology                          |
+| :----------- | :---------------------------------- |
+| Framework    | Next.js (React framework)           |
+| Backend      | Next.js API Routes (serverless APIs)|
+| Database     | MongoDB (via Mongoose or native)    |
+| Styling      | CSS (Flexbox / Grid / animations)   |
+| Deploy       | Vercel / any Node-friendly host     |
 
 ## Project Structure
 
-The project is a standard Next.js application.
-
 ```
+
 /
-├── app/
-│   ├── backend/      # Express.js backend application
-│   └── frontend/     # React frontend application
-├── package.json      # Root package.json with monorepo scripts
+├── .next                # Next.js build output (do not commit)
+├── components           # Reusable React components
+├── lib                  # Helpers: DB connection, utils, etc.
+├── node\_modules
+├── pages                # Next.js pages + API routes (pages/api)
+├── public               # Static assets (images, icons, screenshots)
+├── styles               # Global and component CSS
+├── .env.local           # Local environment variables (not committed)
+├── .gitignore
+├── package-lock.json
+├── package.json
 └── README.md
+
+````
+
+**Notes**
+- API routes live under `pages/api` (e.g., `pages/api/products.js` → `/api/products`).
+- `lib` often contains the MongoDB / Mongoose connection helper.
+
+## Prerequisites
+
+- Node.js v16 or later
+- npm
+- MongoDB (local or Atlas)
+
+## Installation & Setup
+
+1. **Clone the repository** (replace URL with your repository if different)
+```bash
+git clone https://github.com/PrasadKPV/Product_Management.git
+cd Product_Management
+````
+
+2. **Install dependencies**
+
+```bash
+npm install
 ```
 
-## Getting Started
+3. **Create environment file**
 
-To get a local copy up and running, follow these simple steps.
+Create a `.env.local` file in the project root:
 
-### Prerequisites
+```env
+# .env.local
+MONGO_URI="your_mongodb_connection_string"
+# Optional: PORT if you want to override Next's default (3000)
+# PORT=3000
+```
 
--   Node.js (v16 or later) and npm
--   MongoDB (local instance or a connection string from a service like MongoDB Atlas)
+> If you use MongoDB Atlas, the connection string typically looks like:
+> `mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority`
 
-### Installation & Setup
+## Running Locally
 
-1.  **Clone the repository**
-    ```sh
-    git clone https://github.com/PrasadKPV/Product_Management.git
-    cd product-management
-    ```
+Start the development server:
 
-2.  **Install dependencies from the root directory**
-    ```sh
-    npm install
-    ```
-
-3.  **Set up environment variables**
-    Create a `.env.local` file in the root of your project and add your MongoDB connection string.
-    ```env
-    # .env.local
-    MONGO_URI=your_mongodb_connection_string
-    ```
-
-### Running the Application
-
-```sh
+```bash
 npm run dev
 ```
 
-This will start both the backend and frontend servers concurrently.
--   The React frontend will be available at `http://localhost:3000`.
--   The Express backend will be running on `http://localhost:5000` (or the port you specified in `.env`).
+* Open `http://localhost:3000` to view the app.
+* Next.js API routes run on the same server (e.g., `http://localhost:3000/api/...`).
 
-The frontend is configured to proxy API requests to the backend, so you're all set to start developing!
+## Production
+
+Build and start:
+
+```bash
+npm run build
+npm start
+```
+
+## Deployment
+
+Recommended: deploy to **Vercel** (seamless with Next.js).
+
+1. Push your repository to GitHub.
+2. Import the repo in Vercel.
+3. Add the `MONGO_URI` environment variable in the Vercel dashboard (Project → Settings → Environment Variables).
+4. Deploy.
+
+## Troubleshooting
+
+* If pages don't update properly, try removing `.next` and restarting:
+
+  ```bash
+  rm -rf .next
+  npm run dev
+  ```
+* Ensure `MONGO_URI` is correct and the DB user has network access (Atlas IP whitelist or 0.0.0.0/0 for testing).
+* Confirm `package.json` contains these scripts (typical for Next.js):
+
+  ```json
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  }
+  ```
+* Node version mismatch can break builds — use Node >=16.
+
+## Screenshots
+
+Place screenshots under `public/screenshots/` and reference them in this README like:
+
+```markdown
+![Grid View](./public/screenshots/grid-view.png)
+```
