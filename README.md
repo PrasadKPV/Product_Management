@@ -10,15 +10,15 @@ A modern, full-featured, and responsive web application for managing product inv
 
 | Grid View                               | List View                               |
 | :-------------------------------------: | :-------------------------------------: |
-| ![Grid View](/screenshots/grid.png) | ![List View](/screenshots/list.png) |
+| ![Grid View](./public/screenshots/grid.png) | ![List View](./public/screenshots/list.png) |
 
 | Add Product Form                     | Edit Product Form                         |
 | :---------------------------------------: | :---------------------------------------: |
-| ![Add Form](/screenshots/add.png) | ![Edit Form](/screenshots/edit.png) |
+| ![Add Form](./public/screenshots/add.png) | ![Edit Form](./public//screenshots/edit.png) |
 
 | Delete Product Form                     | Mobile Responsive Views                   |
 | :---------------------------------------: | :---------------------------------------: |
-| ![Delete Form](/screenshots/delete.png) | ![Mobile 1](/screenshots/mv1.png) ![Mobile 2](/screenshots/mv2.png) ![Mobile 3](/screenshots/mv3.png) |
+| ![Delete Form](./public/screenshots/delete.png) | ![Mobile 1](./public/screenshots/mv1.png) ![Mobile 2](./public/screenshots/mv2.png) ![Mobile 3](./public/screenshots/mv3.png) |
 
 
 
