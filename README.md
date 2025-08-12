@@ -2,11 +2,11 @@
 
 A modern, full-featured, and responsive web application for managing a product inventory. Built with the MERN stack, this project showcases a clean user interface, smooth animations, and a robust set of features for a seamless user experience.
 
-[Live Demo](https://your-live-demo-link.com) &nbsp;&nbsp;·&nbsp;&nbsp; [Report Bug](https://github.com/your-repo/issues) &nbsp;&nbsp;·&nbsp;&nbsp; [Request Feature](https://github.com/your-repo/issues)
+[Live Demo](https://your-live-demo-link.com) &nbsp;&nbsp;·&nbsp;&nbsp;
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 -   **CRUD Operations**: Full capabilities to Create, Read, Update, and Delete products.
 -   **Dynamic Product Display**:
@@ -24,19 +24,17 @@ A modern, full-featured, and responsive web application for managing a product i
     -   Client-side validation to prevent errors.
 -   **Safe Deletion**: A confirmation modal prevents accidental product deletion.
 
-## 🚀 Tech Stack
-
-This project is a monorepo managed with npm workspaces.
+## Tech Stack
 
 | Category      | Technology                                                                                             |
 | :------------ | :----------------------------------------------------------------------------------------------------- |
-| **Frontend**  | [React](https://reactjs.org/), [React Router](https://reactrouter.com/), [Axios](https://axios-http.com/) |
-| **Backend**   | [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), [Mongoose](https://mongoosejs.com/) |
+| **Framework** | [Next.js](https://nextjs.org/) (React Framework)                                                       |
+| **Backend**   | Next.js API Routes, [Mongoose](https://mongoosejs.com/)                                                |
 | **Database**  | [MongoDB](https://www.mongodb.com/)                                                                    |
 | **Styling**   | Pure CSS with Flexbox, Grid, Custom Properties, and Animations                                         |
-| **Dev Tools** | [Concurrently](https://www.npmjs.com/package/concurrently), [Nodemon](https://nodemon.io/)              |
+| **Deployment**| [Vercel](https://vercel.com/)                                                                          |
 
-## 📸 Screenshots
+## Screenshots
 
 | Grid View                               | List View                               |
 | :-------------------------------------- | :-------------------------------------- |
@@ -46,9 +44,9 @@ This project is a monorepo managed with npm workspaces.
 | :---------------------------------------- | :---------------------------------------- |
 | *(Placeholder for Add/Edit Form Screenshot)* | *(Placeholder for Mobile View Screenshot)* |
 
-## 📁 Project Structure
+## Project Structure
 
-The project is organized as a monorepo with two main workspaces:
+The project is a standard Next.js application.
 
 ```
 /
@@ -59,7 +57,7 @@ The project is organized as a monorepo with two main workspaces:
 └── README.md
 ```
 
-## 🛠️ Getting Started
+## Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
