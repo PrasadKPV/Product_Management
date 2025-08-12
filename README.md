@@ -71,27 +71,23 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository**
     ```sh
-    git clone https://github.com/your-username/product-management.git
+    git clone https://github.com/PrasadKPV/Product_Management.git
     cd product-management
     ```
 
 2.  **Install dependencies from the root directory**
-    This command will install dependencies for the root, backend, and frontend workspaces.
     ```sh
     npm install
     ```
 
 3.  **Set up environment variables**
-    Create a `.env` file in the `app/backend/` directory and add your MongoDB connection string and a port for the server.
+    Create a `.env.local` file in the root of your project and add your MongoDB connection string.
     ```env
-    # app/backend/.env
+    # .env.local
     MONGO_URI=your_mongodb_connection_string
-    PORT=5000
     ```
 
 ### Running the Application
-
-From the root directory, run the development script:
 
 ```sh
 npm run dev
