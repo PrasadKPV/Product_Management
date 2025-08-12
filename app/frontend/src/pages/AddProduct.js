@@ -27,7 +27,7 @@ export default function AddProduct() {
 
     setLoading(true);
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/products`, form);
+      await axios.post("/api/products", form);
       navigate('/');
     } catch (err) {
       setError(err.response?.data?.message || 'An unexpected error occurred.');

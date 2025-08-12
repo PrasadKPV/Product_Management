@@ -5,6 +5,7 @@ import ProductListItem from '../components/ProductListItem';
 import CustomSelect from '../components/CustomSelect';
 
 
+
 const categoryImages = {
   electronics: [
     '/images/electronics/elec1.jpeg',
@@ -86,7 +87,7 @@ export default function ProductList() {
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/products`);
+        const res = await axios.get("/api/products");
         const fetchedProducts = res.data;
         setAllProducts(shuffleArray(fetchedProducts));
 
@@ -142,12 +143,13 @@ export default function ProductList() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${process.env.REACT_APP_API_URL}/products/${id}`);
+      await axios.delete(`/api/products/${id}`);
       setAllProducts(prev => prev.filter(p => p._id !== id));
     } catch (error) {
       console.error("Failed to delete product:", error);
     }
   };
+
 
   return (
     <div>

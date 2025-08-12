@@ -18,7 +18,7 @@ export default function EditProduct() {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/products/${id}`);
+        const res = await axios.get(`/api/products/${id}`);
         setForm(res.data);
       } catch (err) {
         console.error("Failed to fetch product", err);
@@ -38,7 +38,7 @@ export default function EditProduct() {
     e.preventDefault();
     setError(''); // Clear previous errors
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/products/${id}`, form);
+      await axios.put(`/api/products/${id}`, form);
       navigate('/');
     } catch (err) {
       console.error("Failed to update product", err);
