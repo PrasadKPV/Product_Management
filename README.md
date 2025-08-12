@@ -1,10 +1,21 @@
-# Product Management Dashboard
+# Product Management
 
 A modern, full-featured, and responsive web application for managing product inventory. Built with Next.js and MongoDB, this project showcases a clean UI, smooth animations, and a robust set of features for a seamless user experience.
 
-[Live Demo](https://your-live-demo-link.com) · Replace with your deployed URL
+[Live Demo](https://your-live-demo-link.com)
 
 ---
+
+## Screenshots
+
+| Grid View                               | List View                               |
+| :-------------------------------------: | :-------------------------------------: |
+| ![Grid View](./screenshots/grid-view.png) | ![List View](./screenshots/list-view.png) |
+
+| Add/Edit Product Form                     | Mobile Responsive View                    |
+| :---------------------------------------: | :---------------------------------------: |
+| ![Add/Edit Form](./screenshots/form-view.png) | ![Mobile View](./screenshots/mobile-view.png) |
+
 
 ## Key Features
 
@@ -131,11 +142,3 @@ Recommended: deploy to **Vercel** (seamless with Next.js).
   }
   ```
 * Node version mismatch can break builds — use Node >=16.
-
-## Screenshots
-
-Place screenshots under `public/screenshots/` and reference them in this README like:
-
-```markdown
-![Grid View](./public/screenshots/grid-view.png)
-```
