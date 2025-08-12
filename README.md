@@ -16,17 +16,14 @@ A modern, full-featured, and responsive web application for managing product inv
 | :---------------------------------------: | :---------------------------------------: |
 | ![Add Form](./public/screenshots/add.png) | ![Edit Form](./public/screenshots/edit.png) |
 
-| Delete Product Form |
-|:-------------------:|
-| ![Delete Form](./public/screenshots/delete.png) |
-
-| Responsive Mobile View                    | i Pad View                               |
+| Delete Product Form                     |   Responsive Mobile View                       |
 | :---------------------------------------: | :---------------------------------------: |
-| ![Add Form](./public/screenshots/mv1.png) | ![Edit Form](./public/screenshots/mv2.png) |
+| ![Delete Form](./public/screenshots/delete.png) | ![view](./public/screenshots/mv1.png) |
 
-|Surface pro View                                |
-|:-------------------:|
-| ![Delete Form](./public/screenshots/mv3.png) |
+| iPad View                    | Surface pro View                           |
+| :---------------------------------------: | :---------------------------------------: |
+| ![View](./public/screenshots/mv2.png) | ![View](./public/screenshots/mv3.png) |
+
 
 
 ## Key Features
