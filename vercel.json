@@ -9,8 +9,7 @@
       "src": "app/frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "npm run build --workspace=frontend",
-        "outputDirectory": "app/frontend/build"
+        "buildCommand": "npm run build --workspace=frontend"
       }
     }
   ],
