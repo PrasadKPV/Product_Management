@@ -20,9 +20,9 @@ A modern, full-featured, and responsive web application for managing product inv
 |:-------------------:|
 | ![Delete Form](./public/screenshots/delete.png) |
 
-| Mobile Responsive Views |
+| Mobile Responsive View |
 |:-----------------------:|
-| ![Mobile 1](./public/screenshots/mv1.png) ![Mobile 2](./public/screenshots/mv2.png) ![Mobile 3](./public/screenshots/mv3.png) |
+| ![Mobile 1](./public/screenshots/mv1.png) |![Mobile 2](./public/screenshots/mv2.png) | ![Mobile 3](./public/screenshots/mv3.png) |
 
 
 ## Key Features
@@ -79,7 +79,7 @@ A modern, full-featured, and responsive web application for managing product inv
 1. **Clone the repository** (replace URL with your repository if different)
 ```bash
 git clone https://github.com/PrasadKPV/Product_Management.git
-cd Product_Management
+cd productManagement
 ````
 
 2. **Install dependencies**
