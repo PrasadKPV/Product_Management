@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ProductCard from '../components/ProductCard';
 import ProductListItem from '../components/ProductListItem';
 import CustomSelect from '../components/CustomSelect';
-import dbConnect from '../lib/dbConnect';
+import dbconnect from '../lib/dbconnect';
  import Product from '../lib/Product';
 
 const categoryImages = {
@@ -179,7 +179,7 @@ export default function ProductList({ initialProducts, categoryOptions }) {
 }
 
 export async function getServerSideProps() {
-  await dbConnect();
+  await dbconnect();
 
   const result = await Product.find({});
   // Mongoose result is not directly serializable, so we need to convert it.
