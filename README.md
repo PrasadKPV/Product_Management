@@ -2,7 +2,7 @@
 
 A modern, full-featured, and responsive web application for managing product inventory. Built with Next.js and MongoDB, this project showcases a clean UI, smooth animations, and a robust set of features for a seamless user experience.
 
-[Live Demo](https://your-live-demo-link.com)
+[Live Demo](https://productm.vercel.app/)
 
 ---
 
@@ -10,11 +10,16 @@ A modern, full-featured, and responsive web application for managing product inv
 
 | Grid View                               | List View                               |
 | :-------------------------------------: | :-------------------------------------: |
-| ![Grid View](./screenshots/grid-view.png) | ![List View](./screenshots/list-view.png) |
+| ![Grid View](/screenshots/grid.png) | ![List View](/screenshots/list.png) |
 
-| Add/Edit Product Form                     | Mobile Responsive View                    |
+| Add Product Form                     | Edit Product Form                         |
 | :---------------------------------------: | :---------------------------------------: |
-| ![Add/Edit Form](./screenshots/form-view.png) | ![Mobile View](./screenshots/mobile-view.png) |
+| ![Add Form](/screenshots/add.png) | ![Edit Form](/screenshots/edit.png) |
+
+| Delete Product Form                     | Mobile Responsive Views                   |
+| :---------------------------------------: | :---------------------------------------: |
+| ![Delete Form](/screenshots/delete.png) | ![Mobile 1](/screenshots/mv1.png) ![Mobile 2](/screenshots/mv2.png) ![Mobile 3](/screenshots/mv3.png) |
+
 
 
 ## Key Features
