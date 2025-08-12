@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import dbConnect from '../../../lib/dbConnect';
+import dbconnect from '../../../lib/dbconnect';
 import Image from 'next/image';
 import Product from '../../../lib/Product';
 
@@ -105,7 +105,7 @@ export default function EditProduct({ product }) {
 }
 
 export async function getServerSideProps({ params }) {
-  await dbConnect();
+  await dbconnect();
 
   try {
     const product = await Product.findById(params.id).lean();

@@ -1,4 +1,4 @@
-import dbConnect from '../../../lib/dbConnect';
+import dbconnect from '../../../lib/dbconnect';
 import Product from '../../../lib/Product';
 
 export default async function handler(req, res) {
@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     method,
   } = req;
 
-  await dbConnect();
+  await dbconnect();
 
   switch (method) {
     case 'GET':
